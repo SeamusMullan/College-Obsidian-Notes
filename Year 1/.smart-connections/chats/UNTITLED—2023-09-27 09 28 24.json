@@ -1,0 +1,29 @@
+[
+  [
+    {
+      "role": "user",
+      "content": "Based on [[Class 2 (DC)]], expand and give me more terminology with definitions\n"
+    }
+  ],
+  [
+    {
+      "role": "assistant",
+      "content": "Sure! Here are some additional terminology related to functions:\n\n1. Range: The set of all possible outputs or values that a function can produce. In other words, it is the set of all elements in the second set (B) that are mapped to by the function.\n\n2. Image: The actual output or value that a specific input is mapped to by the function. It is the result of applying the function to a particular element in the domain.\n\n3. Codomain: The set of all possible outputs or values that a function can produce. It is similar to the range, but it includes all possible values that the function could potentially map to, even if they are not actually mapped to by any element in the domain.\n\n4. One-to-One Function: A function in which each element in the domain is mapped to a unique element in the codomain. In other words, no two different elements in the domain are mapped to the same element in the codomain.\n\n5. Onto Function: A function in which every element in the codomain is mapped to by at least one element in the domain. In other words, the range of the function is equal to the codomain.\n\n6. Injective Function: Another term for a one-to-one function.\n\n7. Surjective Function: Another term for an onto function.\n\n8. Bijective Function: A function that is both one-to-one and onto. In other words, each element in the domain is mapped to a unique element in the codomain, and every element in the codomain is mapped to by exactly one element in the domain.\n\n9. Composite Function: A function that is formed by combining two or more functions. The output of one function becomes the input of the next function in the composition.\n\n10. Inverse Function: A function that \"undoes\" the action of another function. If a function f maps elements from set A to set B, then its inverse function, denoted as f^(-1), maps elements from set B back to set A.\n\nThese are some additional terms related to functions. Let me know if you need further clarification on any of them!",
+      "context": "Imagine the following notes were written by the user and contain the necessary information to synthesize a useful answer the user's query:\n---BEGIN NOTE: [[Class 2 (DC)]]---\n#maths \n\n## Functions\n\n- Used to relate elements of sets to each other\n\n$A, B \\text{ are both sets}$\nA function, $f$ for example, is a way of associating to each element in $A$, a unique element in $B$ \n\nFor Example:\n\n$A = \\mathbb{N} = {1, 2, 3, ...}$\n$B = \\mathbb{N}$\n\n$f(x) \\text{ takes an input x and sends it to the corresponding value}$\n\nThe Rule is *what happens* to $x$ or where it is mapped to from set $A$ to set $B$\neg: $f(x) = x^2 +2x +3$\n\nNote: Not all element in $B$ has to receive / be mapped to by an element of $A$\neg:\nif $f(x) = x + 3$, all values in $B$ under 3 will not be mapped to\n\n---\nMoving forwards, assume $A$ is all the positions on the earth\n**latitudes** (- 90 to +180, 0 at equator) and **longitudes** (degrees about a vertical axis, starting at Greenwich) in this example\n\n$$A = \\text{Points on earth}$$\n$$B = \\mathbb{R}$$\n$$\\text{Assume function h(x) maps A to B}$$\n\n\n---\n### Terminology\n\nDomain = The first set, whose elements are known as inputs\n\n\n\n---\n---END NOTE---\n"
+    }
+  ],
+  [
+    {
+      "role": "user",
+      "content": "in future give me 2 sentences max\n"
+    }
+  ],
+  [
+    {
+      "role": "assistant",
+      "content": "Based on your notes, you have two Maths Proficiency Quizzes to complete. The first one is due before October 31st and covers topics 1-4, while the second one is due before December 11th and covers topics 5-8.",
+      "context": "Anticipate the type of answer desired by the user. Imagine the following 1 notes were written by the user and contain all the necessary information to answer the user's question. Begin responses with \"Based on your notes...\"\n---BEGIN #1---\nHome > TO DO:\nMaths\n---\n- [ ] Maths Proficiency Quiz 1 (Before 31st October)\n\t- [ ] Topic 1\n\t- [ ] Topic 2\n\t- [ ] Topic 3\n\t- [ ] Topic 4\n- [ ] Maths Proficiency Quiz 2 (Before 11 December)\n\t- [ ] Topic 5\n\t- [ ] Topic 6\n\t- [ ] Topic 7\n\t- [ ] Topic 8\n---END #1---",
+      "hyd": "PERSONAL > NOTES > HYPOTHETICAL_NOTE.md:\n\n- [ ] Buy groceries for the week: eggs, milk, bread, vegetables, and fruits.\n- [ ] Schedule a dentist appointment for next month.\n- [ ] Call mom to wish her a happy birthday.\n- [ ] Finish reading \"The Great Gatsby\" by Friday.\n- [ ] Pay the electricity bill before the end of the week.\n- [ ] Research and book a hotel for the upcoming vacation.\n- [ ] Attend the team meeting at 2 PM tomorrow.\n- [ ] Start working on the presentation for next week's conference.\n- [ ] Pick up dry cleaning on the way home.\n-"
+    }
+  ]
+]

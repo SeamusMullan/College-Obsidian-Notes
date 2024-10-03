@@ -1,0 +1,25 @@
+{
+  "api_key": "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",
+  "chat_open": true,
+  "file_exclusions": "",
+  "folder_exclusions": "",
+  "header_exclusions": "",
+  "path_only": "",
+  "show_full_path": false,
+  "expanded_view": true,
+  "group_nearest_by_file": false,
+  "language": "en",
+  "log_render": false,
+  "log_render_files": false,
+  "recently_sent_retry_notice": false,
+  "skip_sections": false,
+  "smart_chat_model": "gpt-3.5-turbo-16k",
+  "view_open": true,
+  "version": "1.6.34",
+  "failed_files": [
+    "Comp Sci/Main Page And Todo.md",
+    "Eng Sci/Semester 1/Intro to Engineering Science/Class 5 (ES).md",
+    "Maths/Semester 1/Differential Calculus/Class 7 (DC).md",
+    "Maths/Semester 1/Linear Algebra/Class 2 (LA).md"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": true,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "tag:#maths",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "tag:#eng  ",
+      "color": {
+        "a": 1,
+        "rgb": 7921746
+      }
+    },
+    {
+      "query": "tag:#compsci  ",
+      "color": {
+        "a": 1,
+        "rgb": 5425632
+      }
+    },
+    {
+      "query": "tag:#java  ",
+      "color": {
+        "a": 1,
+        "rgb": 14718802
+      }
+    },
+    {
+      "query": "tag:#compsys  ",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
+    },
+    {
+      "query": "path:\"171 Project\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14745855
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": -3,
+  "nodeSizeMultiplier": 2.01552562247208,
+  "lineSizeMultiplier": 3.10465694459906,
+  "collapse-forces": true,
+  "centerStrength": 0.579020182291667,
+  "repelStrength": 16.12548828125,
+  "linkStrength": 0.924235026041667,
+  "linkDistance": 145,
+  "scale": 0.4513891905677007,
+  "close": true
+}

@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "4bad9f99db5bfc10",
+    "type": "split",
+    "children": [
+      {
+        "id": "679ac7b81ba43181",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b3d81f903093403",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/Semester 2/Integral Calculus/FINAL LECTURE YIPPEE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7c649f0b92230045",
+    "type": "split",
+    "children": [
+      {
+        "id": "2cbabe0d9f6e58a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91963135c807e795",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b8b0393da433962a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "becf912682ac4dc2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "128c7a59872e624b",
+    "type": "split",
+    "children": [
+      {
+        "id": "070b5072c4d7903c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1cf4928d30403dc8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Maths/Semester 2/Integral Calculus/FINAL LECTURE YIPPEE.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d6f4a7d1ed4aee9e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Maths/Semester 2/Integral Calculus/FINAL LECTURE YIPPEE.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c5a019e2aeec8b9b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2cfc123815baeb3a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "8fa268b45b9100fb",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "15c90b51f8b7ce0c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Maths/Semester 2/Integral Calculus/FINAL LECTURE YIPPEE.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 321.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "2b3d81f903093403",
+  "lastOpenFiles": [
+    "Maths/Semester 2/Integral Calculus/9Apr.md",
+    "Eng Sci/Semester 2/Systems and Control/14-2-24 <3.md",
+    "Eng Sci/Semester 2/Systems and Control/17-4-24.md",
+    "Eng Sci/Semester 2/Systems and Control/Class 1.md",
+    "Maths/Semester 2/Integral Calculus/1May.md",
+    "Maths/Semester 2/Integral Calculus/FINAL LECTURE YIPPEE.md",
+    "Lil Notes.md",
+    "Maths/Semester 2/Integral Calculus/Untitled Diagram.svg",
+    "E123 Project/Untitled Diagram.svg",
+    "E123 Project/Breakdown.md",
+    "E123 Project",
+    "STUDY/EE123.md",
+    "STUDY/CS162.md",
+    "Home.md",
+    "STUDY/CS172.md",
+    "Maths/Main Page And Todo.md",
+    "STUDY",
+    "email template direktdsp.md",
+    "Maths/Semester 2/Linear Algebra 1/12-2-24 Linear Algebra.md",
+    "Maths/Semester 1/Linear Algebra/Class 0 (LA).md",
+    "Maths/Semester 1/Linear Algebra/Class 4 (LA).md",
+    "Maths/Semester 1/Linear Algebra/Class 2 (LA).md",
+    "Maths/Differential Calculus/Class 13 (DC).md",
+    "Maths/Differential Calculus/Class 11 (DC).md",
+    "Maths/Differential Calculus/Class 7 (DC).md",
+    "Maths/Differential Calculus/Class 0 (DC).md",
+    "Eng Sci/Main Page And Todo.md",
+    "Eng Sci/Equations.md",
+    "Untitled.canvas",
+    "Za Images/Pasted image 20231127102403.png",
+    "Untitled Diagram.svg",
+    "Eng Sci/Semester 2/Systems and Control",
+    "Comp Sci/Main Page And Todo.md",
+    "Maths/Extra Notes for Things.md",
+    "Eng Sci/Semester 1/Intro to Engineering Science/Diagrams/Example Circuit Class 11.svg",
+    "Eng Sci/Semester 1/Intro to Engineering Science/Diagrams/Class 12 EX1.svg",
+    "Za Images/Pasted image 20231107164955.png",
+    "Eng Sci/Semester 1/Intro to Engineering Science/Diagrams/C7ES.svg",
+    "Za Images/Pasted image 20231106140552.png",
+    "Za Images/Pasted image 20231106142509.png",
+    "Eng Sci/Semester 1/Intro to Engineering Science/Diagrams",
+    "Comp Sci/Semester 1/Computer Systems 1/171 Project",
+    "Za Images",
+    "Comp Sci/Java Notes",
+    "Eng Sci/Semester 1/Intro to Engineering Science",
+    "Maths/Semester 1/Untitled",
+    "Comp Sci/Semester 2/Intro to Comp Sci 2"
+  ]
+}

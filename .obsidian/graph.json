@@ -1,0 +1,37 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"Year 1\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 3355443
+      }
+    },
+    {
+      "query": "path:\"Year 2\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14048444
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.63105061848958,
+  "lineSizeMultiplier": 2.20526936848958,
+  "collapse-forces": true,
+  "centerStrength": 0.63330078125,
+  "repelStrength": 12.25341796875,
+  "linkStrength": 1,
+  "linkDistance": 186,
+  "scale": 0.6716350193263094,
+  "close": true
+}
