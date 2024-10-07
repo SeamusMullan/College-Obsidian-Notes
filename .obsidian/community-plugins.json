@@ -7,5 +7,6 @@
   "quiz-generator",
   "ollama",
   "text-extractor",
-  "ai-image-analyzer"
+  "ai-image-analyzer",
+  "obsidian-diagrams-net"
 ]
