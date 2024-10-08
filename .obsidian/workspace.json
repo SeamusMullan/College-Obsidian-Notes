@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9e3bf2ea11b5d01a",
+        "id": "6c2af01d5b076bf6",
         "type": "tabs",
         "children": [
           {
-            "id": "402aea7b12b022ce",
+            "id": "2346e46f57d31649",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Year 2/Semester 1/Computer Architecture/8th Oct 2024.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Year 2/Semester 1/Computer Architecture/8th Oct 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Year 2/Semester 1/Computer Architecture/8th Oct 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Year 2/Semester 1/Computer Architecture/8th Oct 2024.md"
+              }
             }
           }
         ]
@@ -142,10 +150,15 @@
       "canvas:Create new canvas": true
     }
   },
-  "active": "402aea7b12b022ce",
+  "active": "2346e46f57d31649",
   "lastOpenFiles": [
-    "Year 2/Semester 1/Calculus 3/1st Oct 2024.md",
+    "Year 2/Images/Pasted image 20241004132321.png",
+    "Year 2/Semester 1/Computer Architecture/8th Oct 2024.md",
+    "Year 2/Semester 1/Computer Architecture/1st Oct 2024.md",
+    "Year 2/Semester 1/Computer Architecture/24th Sept 2024.md",
+    "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
     "Quiz 1.md",
+    "Year 2/Semester 1/Calculus 3/1st Oct 2024.md",
     "2024-10-08.md",
     "Year 2/Semester 1/Calculus 3/8th Oct 2024.md",
     "Year 2/Semester 1/Statistics/25th Sept 2024.md",
@@ -158,18 +171,14 @@
     "Year 2/Semester 1/Data Structures & Algorithms/7th Oct 2024.md",
     "Year 2/Semester 1/Software Testing/4th Oct 2024.md",
     "Year 2/Semester 1/Software Testing/26th Sept 2024.md",
-    "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
     "Year 2/Semester 1/Software Testing/27th Sept 2024.md",
-    "Pasted image 20241004134120.png",
-    "Pasted image 20241004132321.png",
+    "Year 2/Images/Pasted image 20241004134120.png",
     "Year 2/Semester 1/Databases/3rd Oct 2024.md",
     "Year 2/Images/Pasted image 20241002110812.png",
     "Year 2/Images/Pasted image 20241003113708.png",
     "Year 2/Images/Pasted image 20241002111914.png",
     "Year 2/Semester 1/Statistics/Notes & Slides/1Probability.pdf",
     "Year 2/Semester 1/Statistics/Notes & Slides/2Discrete_RVs.pdf",
-    "Year 2/Semester 1/Computer Architecture/1st Oct 2024.md",
-    "Year 2/Semester 1/Computer Architecture/24th Sept 2024.md",
     "Year 2/Images/Screenshot 2024-10-01 at 10.11.57.png",
     "Year 2/Images/Pasted image 20241001163256.png",
     "Year 2/Images/Pasted image 20241001102636.png",
@@ -188,8 +197,6 @@
     "Year 2/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
     "Year 2/Books/CS265",
     "Year 2/Books/untitled folder",
-    "Year 2/Semester 1/Software Testing/! Info.md",
-    "Year 2/Semester 1/Databases/26th Sept 2024 - 2.md",
-    "Year 2/Semester 1/Databases/26th Sept 2024 - 1.md"
+    "Year 2/Semester 1/Software Testing/! Info.md"
   ]
 }
