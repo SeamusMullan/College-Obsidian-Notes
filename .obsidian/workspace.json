@@ -4,18 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "6c2af01d5b076bf6",
+        "id": "44fca2c98747103f",
         "type": "tabs",
         "children": [
           {
-            "id": "2346e46f57d31649",
+            "id": "b1147a4d81591cad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 2/Semester 1/Statistics/9th Oct 2024.md",
+                "file": "Year 2/Semester 1/Software Testing/11 Oct 2024.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "10b999898a4018a9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf"
               }
             }
           }
@@ -86,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 2/Semester 1/Statistics/9th Oct 2024.md",
+                "file": "Year 2/Semester 1/Software Testing/11 Oct 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 2/Semester 1/Statistics/9th Oct 2024.md",
+                "file": "Year 2/Semester 1/Software Testing/11 Oct 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 2/Semester 1/Statistics/9th Oct 2024.md"
+                "file": "Year 2/Semester 1/Software Testing/11 Oct 2024.md"
               }
             }
           }
@@ -150,18 +160,26 @@
       "canvas:Create new canvas": true
     }
   },
-  "active": "2346e46f57d31649",
+  "active": "b1147a4d81591cad",
   "lastOpenFiles": [
-    "Year 2/Semester 1/Computer Architecture/8th Oct 2024.md",
+    "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
+    "Year 2/Semester 1/Software Testing/11 Oct 2024.md",
+    "Quiz 1.md",
+    "Quiz 2.md",
+    "Quiz 3.md",
+    "Year 2/Semester 1/Calculus 3/1st Oct 2024.md",
+    "Year 2/Semester 1/Calculus 3/11th Oct 2024.md",
+    "Year 2/Semester 1/Software Testing/10 Oct 2024.md",
+    "Year 2/Semester 1/Calculus 3/Untitled",
+    "Year 2/Semester 1/Software Testing/4th Oct 2024.md",
+    "Year 2/Semester 1/Software Testing/! Info.md",
     "Year 2/Semester 1/Statistics/9th Oct 2024.md",
+    "Year 2/Semester 1/Computer Architecture/8th Oct 2024.md",
     "Pasted image 20241008171130.png",
     "Pasted image 20241008171107.png",
     "Year 2/Images/Pasted image 20241004132321.png",
     "Year 2/Semester 1/Computer Architecture/1st Oct 2024.md",
     "Year 2/Semester 1/Computer Architecture/24th Sept 2024.md",
-    "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
-    "Quiz 1.md",
-    "Year 2/Semester 1/Calculus 3/1st Oct 2024.md",
     "2024-10-08.md",
     "Year 2/Semester 1/Calculus 3/8th Oct 2024.md",
     "Year 2/Semester 1/Statistics/25th Sept 2024.md",
@@ -172,7 +190,6 @@
     "Diagram.svg",
     "Diagram.svg.xml",
     "Year 2/Semester 1/Data Structures & Algorithms/7th Oct 2024.md",
-    "Year 2/Semester 1/Software Testing/4th Oct 2024.md",
     "Year 2/Semester 1/Software Testing/26th Sept 2024.md",
     "Year 2/Semester 1/Software Testing/27th Sept 2024.md",
     "Year 2/Images/Pasted image 20241004134120.png",
@@ -186,18 +203,10 @@
     "Year 2/Images/Pasted image 20241001163256.png",
     "Untitled.canvas",
     "Year 2/Semester 1/Calculus 3/24th September 2024.md",
-    "Year 2/Semester 1/Calculus 3/27th Sept 2024.md",
-    "Year 2/Semester 1/Computer Architecture/! Info.md",
-    "Year 1/Maths/Differential Calculus/Class 0 (DC).md",
     "Year 2/Semester 1/Calculus 3/Notes & Slides/1. Euclidean space galatia 2024.pdf",
     "Year 2/Semester 1/Calculus 3/Notes & Slides/2. Functions of several variables galatia 2024.pdf",
-    "Home.md",
     "Year 2/Books/ST221/stats- data & models de veaux, velleman and bock.pdf",
-    "Year 2/Semester 1/Data Structures & Algorithms/30th Sept 2024.md",
-    "Year 2/Semester 1/Data Structures & Algorithms/23 Sept 2024 -2.md",
     "Year 2/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
-    "Year 2/Books/CS265",
-    "Year 2/Books/untitled folder",
-    "Year 2/Semester 1/Software Testing/! Info.md"
+    "Year 2/Books/CS265"
   ]
 }
