@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "fb9509b50fe08034",
+        "id": "e1afca5c7180b63c",
         "type": "tabs",
         "children": [
           {
-            "id": "fb246b8e8faa8e5f",
+            "id": "289155b55f66ae98",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf"
+                "file": "Year 2/Semester 1/Databases/! Info.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -84,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
+                "file": "Year 2/Semester 1/Databases/! Info.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
+                "file": "Year 2/Semester 1/Databases/! Info.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf"
+                "file": "Year 2/Semester 1/Databases/! Info.md"
               }
             }
           }
@@ -148,15 +150,15 @@
       "canvas:Create new canvas": true
     }
   },
-  "active": "fb246b8e8faa8e5f",
+  "active": "289155b55f66ae98",
   "lastOpenFiles": [
+    "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
     "Year 2/Semester 1/Computer Architecture/15th Oct 2024.md",
     "Year 1/Maths/Semester 2/Integral Calculus/1May.md",
     "Pasted image 20241015161646.png",
     "Pasted image 20241015161645.png",
     "Year 2/Semester 1/Data Structures & Algorithms/14th Oct 2024.md",
     "Year 2/Semester 1/Statistics/14th Oct 2024.md",
-    "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
     "Year 2/Semester 1/Software Testing/11 Oct 2024.md",
     "Quiz 1.md",
     "Quiz 2.md",
@@ -184,7 +186,6 @@
     "Diagram.svg",
     "Diagram.svg.xml",
     "Year 2/Semester 1/Data Structures & Algorithms/7th Oct 2024.md",
-    "Year 2/Semester 1/Software Testing/26th Sept 2024.md",
     "Year 2/Images/Pasted image 20241004134120.png",
     "Year 2/Images/Pasted image 20241002110812.png",
     "Year 2/Images/Pasted image 20241003113708.png",
