@@ -4,33 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "576020c925fa8508",
+        "id": "62bd74a08b4d2f5e",
         "type": "tabs",
         "children": [
           {
-            "id": "a8018f315e480368",
+            "id": "95d01604b2ae43bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 2/Semester 1/Software Testing/18th Oct 2024.md",
+                "file": "Year 2/Semester 1/Statistics/21st Oct 2024.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "18th Oct 2024"
-            }
-          },
-          {
-            "id": "4ab44c6447627891",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022)"
+              "title": "21st Oct 2024"
             }
           }
         ]
@@ -174,10 +162,11 @@
       "canvas:Create new canvas": true
     }
   },
-  "active": "a8018f315e480368",
+  "active": "95d01604b2ae43bf",
   "lastOpenFiles": [
-    "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
     "Year 2/Semester 1/Software Testing/18th Oct 2024.md",
+    "Year 2/Semester 1/Statistics/21st Oct 2024.md",
+    "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
     "Untitled.md",
     "Year 2/Semester 1/Data Structures & Algorithms/23 Sept 2024 -2.md",
     "Year 2/Semester 1/Data Structures & Algorithms/30th Sept 2024.md",
