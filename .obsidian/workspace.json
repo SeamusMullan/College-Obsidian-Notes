@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bfe10a2db740d5ec",
+        "id": "e7567f962dc7e270",
         "type": "tabs",
         "children": [
           {
-            "id": "e90066b169cf44e9",
+            "id": "01110c49f54c353c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 2/Semester 1/Statistics/25th Nov 2024.md",
+                "file": "Year 2/Semester 1/Computer Architecture/12th Nov 2024.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "25th Nov 2024"
+              "title": "12th Nov 2024"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "[]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,16 +162,25 @@
       "canvas:Create new canvas": true
     }
   },
-  "active": "e90066b169cf44e9",
+  "active": "01110c49f54c353c",
   "lastOpenFiles": [
-    "Year 2/Semester 1/Software Testing/22nd Nov 2024.md",
+    "Year 1/Comp Sci/Semester 1/Computer Systems 1/Class 5 (CSys) (PROJECT INFO).md",
+    "Year 2/Semester 1/Computer Architecture/10th Dec 2024.md",
+    "Year 2/Semester 1/Statistics/4th Dec 2024.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "Year 2/Semester 1/Computer Architecture/3rd Dec 2024.md",
+    "Year 2/Semester 1/Statistics/2nd Dec 2024.md",
+    "Year 2/Semester 1/Statistics/20th Nov 2024.md",
+    "Year 2/Semester 1/Statistics/30th Sept 2024.md",
+    "Year 2/Semester 1/Statistics/2nd Oct 2024.md",
+    "Year 2/Semester 1/Computer Architecture/8th Oct 2024.md",
     "Year 2/Semester 1/Statistics/25th Nov 2024.md",
+    "Year 2/Semester 1/Software Testing/22nd Nov 2024.md",
     "Year 2/Semester 1/Statistics/9th Oct 2024.md",
     "Year 2/Semester 1/Statistics/11th November (11) @ 11-11am.md",
     "Year 2/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
-    "Year 2/Semester 1/Statistics/20th Nov 2024.md",
     "Year 2/Semester 1/Statistics/14th Oct 2024.md",
-    "Untitled 1.md",
     "Year 2/Semester 1/Computer Architecture/12th Nov 2024.md",
     "Year 2/Semester 1/Computer Architecture/24th Sept 2024.md",
     "Year 2/Semester 1/Statistics/18th Nov 2024.md",
@@ -180,18 +189,9 @@
     "Year 2/Semester 1/Software Testing/4th Oct 2024.md",
     "Year 2/Semester 1/Software Testing/27th Sept 2024.md",
     "Year 2/Semester 1/Statistics/4th Nov 2024.md",
-    "Untitled.md",
     "Untitled 2.md",
     "Quiz 3.md",
-    "Quiz 4.md",
-    "Quiz 2.md",
-    "Quiz 1.md",
     "Year 2/Images/Pasted image 20241008171107.png",
-    "Year 2/Semester 1/Statistics/23rd Oct 2024.md",
-    "Year 2/Semester 1/Computer Architecture/22nd Oct 2024.md",
-    "Year 2/Semester 1/Computer Architecture/15th Oct 2024.md",
-    "Year 2/Semester 1/Statistics/21st Oct 2024.md",
-    "Year 2/Semester 1/Software Testing/18th Oct 2024.md",
     "Year 2/Images/Pasted image 20241015161646.png",
     "Year 2/Images/Pasted image 20241015161645.png",
     "Year 2/Semester 1/Calculus 3/Untitled",
