@@ -57,7 +57,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -159,17 +160,20 @@
       "command-palette:Open command palette": false,
       "obsidian-matrix:Obsidian Matrix": false,
       "quiz-generator:Open generator": false,
-      "canvas:Create new canvas": true
+      "canvas:Create new canvas": true,
+      "terminal:Open terminal": false
     }
   },
-  "active": "e587ad25a74c6020",
+  "active": "d570ff1824f51320",
   "lastOpenFiles": [
+    "Year 2/Semester 2/Info & Links.md",
+    "terminal",
+    "untitled folder",
     "Year 2/Semester 2/CS211 - DSA/Untitled",
     "Year 2/Semester 2/CS355 - Theory of Computation/Untitled",
     "Year 2/Semester 2/CS335 - Software Eng & Process/Untitled",
     "Year 2/Semester 2/CS280 - UX UI Interaction Design/Untitled",
     "Year 2/Semester 2/CS240 - OSCC/Untitled",
-    "Year 2/Semester 2/Info & Links.md",
     "Year 2/Semester 2/Books/Operating Systems Three Easy Pieces (Remzi H Arpaci-Dusseau, Andrea C Arpaci-Dusseau) (Z-Library).pdf",
     "Year 2/Semester 2/Books",
     "Year 2/Semester 1/Calculus 3/27th Sept 2024.md",
@@ -197,15 +201,12 @@
     "Year 2/Semester 1/Computer Architecture/8th Oct 2024.md",
     "Year 2/Semester 1/Statistics/25th Nov 2024.md",
     "Year 2/Semester 1/Software Testing/22nd Nov 2024.md",
-    "Year 2/Semester 1/Books/CS265/RALF BIERIG, STEPHEN BROWN, EDGAR GALVÁN, JOE TIMONEY - Essentials of Software Testing-Cambridge University Press (2022).pdf",
     "Year 2/Images/Pasted image 20241008171107.png",
     "Year 2/Images/Pasted image 20241015161646.png",
     "Year 2/Images/Pasted image 20241015161645.png",
-    "Year 2/Semester 1/Calculus 3/Untitled",
     "Year 2/Images/Pasted image 20241008171130.png",
     "Year 2/Images/Pasted image 20241004132321.png",
     "Diagram.svg",
-    "Diagram.svg.xml",
     "Year 2/Images/Pasted image 20241004134120.png",
     "Year 2/Images/Pasted image 20241002110812.png",
     "Year 2/Images/Pasted image 20241003113708.png",
