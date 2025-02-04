@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6f1f91e1419d24b3",
+        "id": "fd509f5210710afb",
         "type": "tabs",
         "children": [
           {
-            "id": "d570ff1824f51320",
+            "id": "c97b846e3ff846bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 2/Semester 2/Info & Links.md",
+                "file": "Year 2/Semester 2/CS230 - Web Info Processing/04 - 02 - 2024.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Info & Links"
+              "title": "04 - 02 - 2024"
             }
           }
         ]
@@ -164,18 +164,22 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "d570ff1824f51320",
+  "active": "c97b846e3ff846bb",
   "lastOpenFiles": [
+    "Year 2/Semester 2/CS230 - Web Info Processing/!Info.md",
+    "Year 2/Semester 2/CS230 - Web Info Processing/04 - 02 - 2024.md",
+    "Year 2/Semester 2/CS230 - Web Info Processing/1/Info & Links.md",
     "Year 2/Semester 2/Info & Links.md",
+    "Year 2/Semester 2/Books/CS335/Software engineering (Ian Sommerville).pdf",
+    "Year 2/Semester 2/Books/CS335/Requirements engineering  processes and techniques (Kotonya, Gerald).pdf",
+    "Year 2/Semester 2/Books/CS335/Requirements analysis and system design (Maciaszek, Leszek A).pdf",
+    "Year 2/Semester 2/Books/CS335/Object-Oriented Software Engineering Practical Software Development using UML and Java (Timothy Lethbridge, Robert Laganiere).pdf",
+    "Year 2/Semester 2/Books/CS335/Object-Oriented Project Management with UML (Murray Cantor).pdf",
+    "Year 2/Semester 2/Books/CS335",
+    "Year 2/Semester 2/Books/CS240/Operating Systems Three Easy Pieces (Remzi H Arpaci-Dusseau, Andrea C Arpaci-Dusseau) (Z-Library).pdf",
+    "Year 2/Semester 2/Books/CS240",
     "terminal",
     "untitled folder",
-    "Year 2/Semester 2/CS211 - DSA/Untitled",
-    "Year 2/Semester 2/CS355 - Theory of Computation/Untitled",
-    "Year 2/Semester 2/CS335 - Software Eng & Process/Untitled",
-    "Year 2/Semester 2/CS280 - UX UI Interaction Design/Untitled",
-    "Year 2/Semester 2/CS240 - OSCC/Untitled",
-    "Year 2/Semester 2/Books/Operating Systems Three Easy Pieces (Remzi H Arpaci-Dusseau, Andrea C Arpaci-Dusseau) (Z-Library).pdf",
-    "Year 2/Semester 2/Books",
     "Year 2/Semester 1/Calculus 3/27th Sept 2024.md",
     "Year 2/Semester 1/Calculus 3/24th September 2024.md",
     "Year 2/Semester 1/Calculus 3/11th Oct 2024.md",
@@ -185,7 +189,6 @@
     "Year 2/Semester 1/! Revision/Sample Exams.md",
     "Year 2/Semester 1/! Revision/Calc 3.md",
     "Year 2/Semester 1/! Revision/! Info.md",
-    "Year 2/Semester 1/! Revision",
     "Year 1/Eng Sci/Semester 2/Systems and Control/17-4-24.md",
     "Year 2/Semester 1/Computer Architecture/12th Nov 2024.md",
     "Year 1/Comp Sci/Semester 1/Computer Systems 1/Class 5 (CSys) (PROJECT INFO).md",
@@ -199,8 +202,6 @@
     "Year 2/Semester 1/Statistics/30th Sept 2024.md",
     "Year 2/Semester 1/Statistics/2nd Oct 2024.md",
     "Year 2/Semester 1/Computer Architecture/8th Oct 2024.md",
-    "Year 2/Semester 1/Statistics/25th Nov 2024.md",
-    "Year 2/Semester 1/Software Testing/22nd Nov 2024.md",
     "Year 2/Images/Pasted image 20241008171107.png",
     "Year 2/Images/Pasted image 20241015161646.png",
     "Year 2/Images/Pasted image 20241015161645.png",

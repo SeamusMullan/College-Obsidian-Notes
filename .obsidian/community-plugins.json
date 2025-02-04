@@ -9,5 +9,6 @@
   "text-extractor",
   "ai-image-analyzer",
   "obsidian-diagrams-net",
-  "terminal"
+  "terminal",
+  "obsidian-html-tags-autocomplete"
 ]
