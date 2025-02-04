@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fd509f5210710afb",
+        "id": "c9b1da7767a35791",
         "type": "tabs",
         "children": [
           {
-            "id": "c97b846e3ff846bb",
+            "id": "02ed4a5d0b8be5ab",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 2/Semester 2/CS230 - Web Info Processing/04 - 02 - 2024.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "04 - 02 - 2024"
+              "title": "New tab"
             }
           }
         ]
@@ -164,10 +160,16 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "c97b846e3ff846bb",
+  "active": "02ed4a5d0b8be5ab",
   "lastOpenFiles": [
-    "Year 2/Semester 2/CS230 - Web Info Processing/!Info.md",
     "Year 2/Semester 2/CS230 - Web Info Processing/04 - 02 - 2024.md",
+    "Year 2/Semester 2/CS230 - Web Info Processing/Examples/01-02-2024/app.js",
+    "Year 2/Semester 2/CS230 - Web Info Processing/Examples/01-02-2024/styles.css",
+    "Year 2/Semester 2/CS230 - Web Info Processing/Examples/01-02-2024/index.html",
+    "Year 2/Semester 2/CS230 - Web Info Processing/Examples/01-02-2024",
+    "Year 2/Semester 2/CS230 - Web Info Processing/Examples",
+    "Year 2/Semester 2/CS230 - Web Info Processing/Untitled.md",
+    "Year 2/Semester 2/CS230 - Web Info Processing/!Info.md",
     "Year 2/Semester 2/CS230 - Web Info Processing/1/Info & Links.md",
     "Year 2/Semester 2/Info & Links.md",
     "Year 2/Semester 2/Books/CS335/Software engineering (Ian Sommerville).pdf",
@@ -175,11 +177,6 @@
     "Year 2/Semester 2/Books/CS335/Requirements analysis and system design (Maciaszek, Leszek A).pdf",
     "Year 2/Semester 2/Books/CS335/Object-Oriented Software Engineering Practical Software Development using UML and Java (Timothy Lethbridge, Robert Laganiere).pdf",
     "Year 2/Semester 2/Books/CS335/Object-Oriented Project Management with UML (Murray Cantor).pdf",
-    "Year 2/Semester 2/Books/CS335",
-    "Year 2/Semester 2/Books/CS240/Operating Systems Three Easy Pieces (Remzi H Arpaci-Dusseau, Andrea C Arpaci-Dusseau) (Z-Library).pdf",
-    "Year 2/Semester 2/Books/CS240",
-    "terminal",
-    "untitled folder",
     "Year 2/Semester 1/Calculus 3/27th Sept 2024.md",
     "Year 2/Semester 1/Calculus 3/24th September 2024.md",
     "Year 2/Semester 1/Calculus 3/11th Oct 2024.md",
@@ -200,8 +197,6 @@
     "Year 2/Semester 1/Statistics/2nd Dec 2024.md",
     "Year 2/Semester 1/Statistics/20th Nov 2024.md",
     "Year 2/Semester 1/Statistics/30th Sept 2024.md",
-    "Year 2/Semester 1/Statistics/2nd Oct 2024.md",
-    "Year 2/Semester 1/Computer Architecture/8th Oct 2024.md",
     "Year 2/Images/Pasted image 20241008171107.png",
     "Year 2/Images/Pasted image 20241015161646.png",
     "Year 2/Images/Pasted image 20241015161645.png",
