@@ -11,10 +11,14 @@
             "id": "02ed4a5d0b8be5ab",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Year 2/Semester 2/CS240 - OSCC/06-02-2024 - 2.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "06-02-2024 - 2"
             }
           }
         ]
@@ -162,21 +166,33 @@
   },
   "active": "02ed4a5d0b8be5ab",
   "lastOpenFiles": [
-    "Year 2/Semester 2/CS230 - Web Info Processing/04 - 02 - 2024.md",
+    "Year 2/Semester 2/CS240 - OSCC/06-02-2024 - 1.md",
+    "Year 2/Semester 2/CS240 - OSCC/06-02-2024 - 2.md",
+    "Year 2/Semester 2/CS240 - OSCC/Images/Pasted image 20250206145331.png",
+    "Year 2/Semester 2/CS240 - OSCC/Images/Pasted image 20250206145056.png",
+    "Year 2/Semester 2/CS240 - OSCC/Images/Pasted image 20250206144925.png",
+    "Year 2/Semester 2/CS240 - OSCC/Images/Pasted image 20250206143807.png",
+    "Year 2/Semester 2/CS240 - OSCC/Images/Pasted image 20250206143325.png",
+    "Year 2/Semester 2/CS240 - OSCC/Images/Pasted image 20250206143301.png",
+    "Year 2/Semester 2/CS240 - OSCC/Images",
+    "Year 2/Semester 2/CS240 - OSCC/Images/Pasted image 20250206143040.png",
+    "Year 2/Semester 2/CS240 - OSCC/!Info.md",
+    "Year 2/Semester 2/CS230 - Web Info Processing/04 - 02 - 2024 - 2.md",
+    "Year 2/Semester 2/CS230 - Web Info Processing/!Info.md",
+    "Year 2/Semester 2/CS230 - Web Info Processing/04 - 02 - 2024 - 1.md",
+    "Year 2/Semester 2/CS280 - UX UI Interaction Design/02-04-2024.md",
+    "Year 2/Semester 2/CS280 - UX UI Interaction Design/!Info.md",
     "Year 2/Semester 2/CS230 - Web Info Processing/Examples/01-02-2024/app.js",
     "Year 2/Semester 2/CS230 - Web Info Processing/Examples/01-02-2024/styles.css",
     "Year 2/Semester 2/CS230 - Web Info Processing/Examples/01-02-2024/index.html",
     "Year 2/Semester 2/CS230 - Web Info Processing/Examples/01-02-2024",
     "Year 2/Semester 2/CS230 - Web Info Processing/Examples",
-    "Year 2/Semester 2/CS230 - Web Info Processing/Untitled.md",
-    "Year 2/Semester 2/CS230 - Web Info Processing/!Info.md",
     "Year 2/Semester 2/CS230 - Web Info Processing/1/Info & Links.md",
     "Year 2/Semester 2/Info & Links.md",
     "Year 2/Semester 2/Books/CS335/Software engineering (Ian Sommerville).pdf",
     "Year 2/Semester 2/Books/CS335/Requirements engineering  processes and techniques (Kotonya, Gerald).pdf",
     "Year 2/Semester 2/Books/CS335/Requirements analysis and system design (Maciaszek, Leszek A).pdf",
     "Year 2/Semester 2/Books/CS335/Object-Oriented Software Engineering Practical Software Development using UML and Java (Timothy Lethbridge, Robert Laganiere).pdf",
-    "Year 2/Semester 2/Books/CS335/Object-Oriented Project Management with UML (Murray Cantor).pdf",
     "Year 2/Semester 1/Calculus 3/27th Sept 2024.md",
     "Year 2/Semester 1/Calculus 3/24th September 2024.md",
     "Year 2/Semester 1/Calculus 3/11th Oct 2024.md",
@@ -192,21 +208,9 @@
     "Year 2/Semester 1/Computer Architecture/10th Dec 2024.md",
     "Year 2/Semester 1/Statistics/4th Dec 2024.md",
     "Untitled.md",
-    "Untitled 1.md",
-    "Year 2/Semester 1/Computer Architecture/3rd Dec 2024.md",
-    "Year 2/Semester 1/Statistics/2nd Dec 2024.md",
-    "Year 2/Semester 1/Statistics/20th Nov 2024.md",
-    "Year 2/Semester 1/Statistics/30th Sept 2024.md",
     "Year 2/Images/Pasted image 20241008171107.png",
     "Year 2/Images/Pasted image 20241015161646.png",
     "Year 2/Images/Pasted image 20241015161645.png",
-    "Year 2/Images/Pasted image 20241008171130.png",
-    "Year 2/Images/Pasted image 20241004132321.png",
-    "Diagram.svg",
-    "Year 2/Images/Pasted image 20241004134120.png",
-    "Year 2/Images/Pasted image 20241002110812.png",
-    "Year 2/Images/Pasted image 20241003113708.png",
-    "Year 2/Images/Pasted image 20241002111914.png",
     "Untitled.canvas"
   ]
 }
