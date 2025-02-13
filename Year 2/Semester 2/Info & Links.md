@@ -1,4 +1,6 @@
-test
+***Naming Legend:***
+*Day - Month - Year - Lecture*
+*Lecture -> first or second lecture during that day*
 ## Probably Useful Stuff
 ---
 [LibrarySearch](https://nuim.summon.serialssolutions.com/#!/ "https://nuim.summon.serialssolutions.com/#!/")
