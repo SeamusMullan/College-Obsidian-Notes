@@ -5,18 +5,39 @@
 **Exam:** 2 Hour written exam
 **Labs:** 2 Hour labs, get graded before leaving
 
+### Learning intentions
+
+**Theories:**
+- Design by contract
+- Natural deduction proofs
+- Hoare logic
+- Graph-based reasoning
+- Linear temporal logic
+- Computational tree logic.
+
+**Tools:**
+- Rocq/Coq
+- Cyclone
+- Dafny
+- NuSMV
+- TLA+
+- Event-B
+
+---
+
 *Wu Hao*
 ### Week 1 - Week 5:
 
-**Design by contract**
+- **Design by contract**
+- **Interactive proving**
+- **Graph Based Verification**
 
-**Interactive proving**
-
-**Graph Based Verification**
-
+---
 
 Week 6:
 Study Week
+
+---
 
 *Rosemary Monahan*
 ### Week 7 - Week 12
@@ -31,8 +52,11 @@ Study Week
 - Take particular components and properties and prove correctness
 - Temporal Logic (how things change into the future)
 
+---
 
 Lecturer main areas of research **POP** (Principles of Programming)
 Biggest research group in CS Department (8 PhD Students)
 
 Research topics incl. FRET, specification, testing and verification. AI with verification, verification visualisation
+
+---
