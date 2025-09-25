@@ -1,6 +1,6 @@
 #year3 #verif 
 
-**Lecturer:** Wu Hao & Rosemary Monahan
+**Lecturer:** Hao Wu & Rosemary Monahan
 **CA:** 20% overall
 **Exam:** 2 Hour written exam
 **Labs:** 2 Hour labs, get graded before leaving
@@ -25,7 +25,7 @@
 
 ---
 
-*Wu Hao*
+*Hao Wu*
 ### Week 1 - Week 5:
 
 - **Design by contract**
