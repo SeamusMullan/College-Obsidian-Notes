@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 3/Semester 1/CS320/L3.md",
+                "file": "Year 3/Semester 1/CS320/Info.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "L3"
+              "title": "Info"
             }
           }
         ]
@@ -167,8 +167,9 @@
   },
   "active": "0c2e282ec61e5a16",
   "lastOpenFiles": [
-    "Year 3/Semester 1/CS353/Project/ISBN-Book-App - GenAI.md",
     "Year 3/Semester 1/CS320/L3.md",
+    "Year 3/Semester 1/CS320/Info.md",
+    "Year 3/Semester 1/CS353/Project/ISBN-Book-App - GenAI.md",
     "Year 3/Semester 1/CS353/Project/ISBN-Book-App.md",
     "Year 3/Semester 1/CS353/L1.md",
     "Year 3/Semester 1/CS353/Project",
@@ -193,7 +194,6 @@
     "Year 3/Semester 1/CS370/Exam Solutions/CS320_January_2023-solutions(1).md",
     "Year 3/Semester 1/CS370/Exam Solutions/CS320_Autumn_2019_solutions(1) 1.md",
     "Year 3/Semester 1/CS370/Exam Solutions/CS320_January_2023-solutions 1.md",
-    "Year 3/Semester 1/CS370/Exam Solutions/CS320_Autumn_2023-solutions(1) 1.md",
     "Year 3/Semester 1/CS370/Exam Solutions/main.py",
     "Year 3/Semester 1/CS370/Exam Solutions/markitdown",
     "Year 3/Semester 1/CS370/Exam Solutions/files.txt",
