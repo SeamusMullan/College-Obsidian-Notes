@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7d394a05dacc3faa",
+        "id": "631803574500b570",
         "type": "tabs",
         "children": [
           {
-            "id": "0c2e282ec61e5a16",
+            "id": "64e48728bb159e9a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 3/Semester 1/CS353/Project/ISBN-Book-App - GenAI.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "ISBN-Book-App - GenAI"
+              "title": "New tab"
             }
           }
         ]
@@ -165,34 +161,35 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "0c2e282ec61e5a16",
+  "active": "e587ad25a74c6020",
   "lastOpenFiles": [
-    "Year 3/Semester 1/CS353/Project/ISBN-Book-App.md",
+    "Year 3/Semester 1/CS357/L3.md",
+    "Year 3/Semester 1/CS357/L4.md",
     "Year 3/Semester 1/CS353/Project/ISBN-Book-App - GenAI.md",
+    "Year 3/Semester 1/CS353/Project/ISBN-Book-App.md",
+    "Year 3/Semester 1/CS357/Info.md",
+    "Year 3/Semester 1/CS264/L2.md",
+    "Year 3/Semester 1/CS264/L3.md",
+    "Year 3/Semester 1/CS264/L1.md",
+    "Year 3/Semester 1/CS357/L1.md",
+    "Year 3/Semester 1/CS357/L2.md",
+    "Year 3/Semester 1/CS310/L3.md",
+    "Year 3/Semester 1/CS370/L3.md",
+    "Year 3/Semester 1/CS370/L2.md",
+    "Year 3/Semester 1/CS320/L3.md",
+    "Year 3/Semester 1/CS320/L2.md",
     "Year 3/Semester 1/CS353/L1.md",
     "Year 3/Semester 1/CS353/Project",
     "Year 3/Semester 1/CS353/Info.md",
-    "Year 3/Semester 1/CS357/L1.md",
     "Year 3/Semester 1/CS310/L2.md",
     "Year 3/Semester 1/CS310/L1.md",
-    "Year 3/Semester 1/CS264/L1.md",
     "Year 3/Semester 1/CS264/Info.md",
-    "Year 3/Semester 1/CS357/Info.md",
     "Year 3/Semester 1/CS370/Info.md",
     "Year 3/Semester 1/CS310/Info.md",
     "Year 2/Semester 2/CS211 - DSA/17-02-24-2.md",
     "Year 2/Semester 2/CS211 - DSA/10-02-24-1.md",
     "Year 1/Maths/Differential Calculus/Class 7 (DC).md",
     "Year 1/Maths/Differential Calculus/Class 13 (DC).md",
-    "Year 1/Maths/Differential Calculus/Class 19 (DC).md",
-    "Year 1/Maths/Differential Calculus/Class 12 (DC).md",
-    "Year 1/Maths/Semester 2/Integral Calculus/9Apr.md",
-    "Year 3/Semester 1/CS370/L2.md",
-    "Year 3/Semester 1/CS370/L1.md",
-    "Year 3/Semester 1/CS370/Exam Solutions/CS320_January_2023-solutions(1).md",
-    "Year 3/Semester 1/CS370/Exam Solutions/CS320_Autumn_2019_solutions(1) 1.md",
-    "Year 3/Semester 1/CS370/Exam Solutions/CS320_January_2023-solutions 1.md",
-    "Year 3/Semester 1/CS370/Exam Solutions/CS320_Autumn_2023-solutions(1) 1.md",
     "Year 3/Semester 1/CS370/Exam Solutions/main.py",
     "Year 3/Semester 1/CS370/Exam Solutions/markitdown",
     "Year 3/Semester 1/CS370/Exam Solutions/files.txt",

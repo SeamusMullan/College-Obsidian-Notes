@@ -1,0 +1,768 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning,arrows}
+
+% Custom environments
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{example}{Example}[section]
+
+\newtcolorbox{keypoint}{
+    colback=blue!5!white,
+    colframe=blue!75!black,
+    title=Key Point
+}
+
+\newtcolorbox{template}{
+    colback=green!5!white,
+    colframe=green!50!black,
+    title=Exam Template
+}
+
+\newtcolorbox{warning}{
+    colback=red!5!white,
+    colframe=red!75!black,
+    title=Common Mistake
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{CS370 Study Notes}
+\lhead{Computation and Complexity}
+\rfoot{Page \thepage}
+
+\title{\textbf{CS370: Computation and Complexity}\\[0.5em]\Large Comprehensive Exam Study Notes}
+\author{Based on January 2025, Autumn 2025, and Sample 2026 Exam Papers}
+\date{Maynooth University}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+%======================================================================
+\section{Exam Structure Overview}
+%======================================================================
+
+The CS370 exam consists of \textbf{7 questions}, all mandatory, each worth equal marks (approximately 10 marks each). The structure is highly consistent:
+
+\begin{enumerate}
+    \item \textbf{Q1:} Countability Proof (enumerate a set using a TM)
+    \item \textbf{Q2:} Decidability Proof (construct a decider TM)
+    \item \textbf{Q3:} Undecidability Proof (mapping reduction from HALT)
+    \item \textbf{Q4:} Complement Not Turing-Recognizable
+    \item \textbf{Q5:} Prove language is in P \textit{or} NP-hard
+    \item \textbf{Q6:} Prove language is in NP (polynomial-time verifier)
+    \item \textbf{Q7:} NP-Completeness (reduce from 3-SAT) + worked example
+\end{enumerate}
+
+\begin{keypoint}
+Time allowed: 2 hours. One A4 sheet of handwritten notes permitted.
+\end{keypoint}
+
+\newpage
+
+%======================================================================
+\section{Question 1: Countability Proofs}
+%======================================================================
+
+\subsection{Core Concept}
+
+A set $S$ is \textbf{countable} if there exists a bijection $f: \mathbb{N} \to S$, i.e., we can list all elements of $S$ without repetition.
+
+To prove countability, construct a Turing Machine that \textbf{enumerates} all elements of the set in some order (typically lexicographic).
+
+\subsection{The Dovetailing Technique}
+
+\begin{definition}[Dovetailing]
+Systematically iterate through all possible strings over an alphabet in lexicographic order:
+\[
+\epsilon, 0, 1, 00, 01, 10, 11, 000, 001, \ldots
+\]
+For each string, test if it belongs to the set. If yes, output it.
+\end{definition}
+
+\subsection{General Template}
+
+\begin{template}
+\textbf{M$_1$ = ``On any input (or ``On input $n$''):}
+\begin{enumerate}
+    \item Set counter $c = 0$ (or $c = 1$ for file numbering)
+    \item For each string $s$ in lexicographic order over the appropriate alphabet:
+    \begin{enumerate}
+        \item Write $s$ to a temporary file $f$
+        \item Run the \textbf{decider program} on file $f$
+        \item If the decider accepts (file is valid):
+        \begin{itemize}
+            \item \textit{Variant A (enumerate all):} Output $s$ to file $c$.ext, increment $c$
+            \item \textit{Variant B (index n):} If $c == n$, return $s$. Else increment $c$
+        \end{itemize}
+    \end{enumerate}
+\end{enumerate}
+\textbf{''}
+
+Since M$_1$ enumerates the set without skipping elements, this proves the set is countable.
+\end{template}
+
+\subsection{Exam Variations}
+
+\subsubsection{January 2025: LibreOffice Writer Documents}
+\begin{itemize}
+    \item Set: $\{\langle D \rangle : D \text{ is a valid LibreOffice Writer document}\}$
+    \item Decider: \texttt{writerlo} command-line program
+    \item Output files: \texttt{a.odt, aa.odt, aaa.odt, ...}
+    \item Alphabet: Binary (documents are binary files)
+\end{itemize}
+
+\subsubsection{Autumn 2025: Python Programs}
+\begin{itemize}
+    \item Set: $\{\langle P \rangle : P \text{ is a valid Python program}\}$
+    \item Decider: \texttt{python} command (syntax check)
+    \item Input: integer $n$, output: the $n$th Python program
+    \item Alphabet: Keyboard characters (text files)
+\end{itemize}
+
+\subsubsection{Sample 2026: JPEG Files}
+\begin{itemize}
+    \item Set: $\{\langle J \rangle : J \text{ is a valid JPEG file}\}$
+    \item Decider: \texttt{jpegzero} command
+    \item Output files: \texttt{1.pdf, 2.pdf, 3.pdf, ...}
+    \item Alphabet: Binary (bytes)
+\end{itemize}
+
+\begin{warning}
+The key insight is that a \textbf{decider exists} for file format validity. This is always decidable because:
+\begin{itemize}
+    \item File formats have finite, well-defined specifications
+    \item A program can check headers, structure, and syntax in finite time
+\end{itemize}
+\end{warning}
+
+\newpage
+
+%======================================================================
+\section{Question 2: Decidability Proofs}
+%======================================================================
+
+\subsection{Core Concept}
+
+A language $L$ is \textbf{decidable} if there exists a TM $D$ that:
+\begin{itemize}
+    \item Accepts every $w \in L$
+    \item Rejects every $w \notin L$
+    \item Always halts
+\end{itemize}
+
+\subsection{Key Decidable Problems}
+
+\begin{theorem}
+Any property of \textbf{finite automata} (DFA/NFA) is decidable, including:
+\begin{itemize}
+    \item Does FA $M$ accept word $w$?
+    \item Does FA $M$ accept any word?
+    \item Does FA $M$ accept a word of length $> k$?
+    \item Does FA $M$ accept a word starting with symbol $\sigma$?
+    \item Is $L(M_1) = L(M_2)$?
+\end{itemize}
+\end{theorem}
+
+\begin{proof}[Proof Idea]
+FAs have finite state spaces. We can simulate them or analyze their structure in finite time.
+\end{proof}
+
+\subsection{Exam Template}
+
+\begin{template}
+\textbf{Proof:} We will prove $L$ is decidable by constructing a TM $D$ to decide $L$.
+
+\textbf{D = ``On input $\langle \ldots \rangle$:}
+\begin{enumerate}
+    \item Perform finite computation/simulation
+    \item If [condition satisfied]: \textbf{accept}
+    \item Else: \textbf{reject}''
+\end{enumerate}
+
+Since $D$ always halts and correctly decides membership in $L$, this proves $L$ is decidable.
+\end{template}
+
+\subsection{Exam Variations}
+
+\subsubsection{January 2025: FA Accepting Words of Length $> 5$}
+\[
+L_2 = \{\langle M \rangle : M \text{ is a FA that accepts at least one word } w \text{ where } |w| > 5\}
+\]
+
+\textbf{Solution Strategy:}
+\begin{enumerate}
+    \item Construct FA $M'$ that accepts $\Sigma^{>5} = \{w : |w| > 5\}$
+    \item Compute intersection $L(M) \cap L(M')$
+    \item Test if this intersection is non-empty (decidable for FAs)
+    \item Alternative: Use pumping lemma reasoning---if $M$ has $n$ states and accepts any word of length $> n$, it accepts infinitely many words of arbitrary length
+\end{enumerate}
+
+\subsubsection{Autumn 2025: FA Accepting Words Beginning with 0}
+\[
+L_2 = \{\langle M \rangle : M \text{ is a FA and } \exists w \in L(M) \text{ where first symbol of } w \text{ is } 0\}
+\]
+
+\textbf{Solution:}
+\begin{enumerate}
+    \item Construct FA $M'$ accepting $0\Sigma^*$ (words starting with 0)
+    \item Compute $L(M) \cap L(M')$
+    \item Test if intersection is non-empty
+\end{enumerate}
+
+\subsubsection{Sample 2026: TM in State $s$ After $t$ Transitions}
+\[
+L_2 = \{\langle M, s, t \rangle : M \text{ is a TM, and when run on } \epsilon, M \text{ is in state } s \text{ after exactly } t \text{ transitions}\}
+\]
+
+\textbf{Solution:}
+\begin{enumerate}
+    \item Simulate $M$ on empty input for exactly $t$ steps
+    \item Check if current state equals $s$
+    \item Accept if yes, reject otherwise
+\end{enumerate}
+
+\begin{keypoint}
+This is decidable because we only simulate for a \textbf{fixed, finite} number of steps $t$. We don't wait for $M$ to halt---we just observe its state after exactly $t$ transitions.
+\end{keypoint}
+
+\newpage
+
+%======================================================================
+\section{Question 3: Undecidability via Mapping Reduction}
+%======================================================================
+
+\subsection{Core Concept}
+
+\begin{definition}[Mapping Reduction]
+Language $A$ is \textbf{mapping reducible} to language $B$, written $A \leq_m B$, if there exists a computable function $f: \Sigma^* \to \Sigma^*$ such that:
+\[
+w \in A \iff f(w) \in B
+\]
+\end{definition}
+
+\begin{theorem}
+If $A \leq_m B$ and $A$ is undecidable, then $B$ is undecidable.
+\end{theorem}
+
+\subsection{The Halting Problem}
+
+\begin{definition}[HALT]
+\[
+\text{HALT} = \{\langle M, w \rangle : M \text{ is a TM and } M \text{ halts on input } w\}
+\]
+HALT is undecidable (given).
+\end{definition}
+
+\subsection{Reduction Template}
+
+\begin{template}
+\textbf{Proof:} We will use a mapping reduction to prove HALT $\leq_m L_3$.
+
+Assume that $L_3$ is decidable.
+
+The transition function $f$ that maps instances of HALT to instances of $L_3$ is given by TM $F$:
+
+\textbf{F = ``On input $\langle M, w \rangle$:}
+\begin{enumerate}
+    \item Construct the following $N$ given by the following pseudocode:
+    
+    \textbf{N = ``On input $u$:}
+    \begin{enumerate}
+        \item Optional: Check format of $u$, reject if wrong format
+        \item Run $M$ on $w$
+        \item Accept''
+    \end{enumerate}
+    \item Return $\langle N \rangle$''
+\end{enumerate}
+
+Now, $\langle N \rangle \in L_3$ iff $\langle M, w \rangle \in$ HALT.
+
+So, using $f$ and the assumption that $L_3$ is decidable, we can decide HALT. Contradiction.
+
+Therefore, $L_3$ is undecidable.
+\end{template}
+
+\subsection{Understanding the Construction}
+
+The key insight is:
+\begin{itemize}
+    \item $N$ \textbf{ignores} its input $u$
+    \item $N$ first runs $M$ on $w$ (embedded in $N$'s code)
+    \item If $M$ halts on $w$: $N$ accepts (so $N$ accepts everything, including words matching the property)
+    \item If $M$ loops on $w$: $N$ never reaches the accept step (so $N$ accepts nothing)
+\end{itemize}
+
+\subsection{Exam Variations}
+
+\subsubsection{January 2025: TM Accepts Word of Length $> 5$}
+\[
+L_3 = \{\langle M \rangle : M \text{ accepts at least one word } w \text{ where } |w| > 5\}
+\]
+
+\textbf{N = ``On input $u$:}
+\begin{enumerate}
+    \item If $|u| \leq 5$: reject
+    \item Run $M$ on $w$
+    \item Accept''
+\end{enumerate}
+
+\subsubsection{Autumn 2025: TM Accepts Word Starting with 0}
+\[
+L_3 = \{\langle M \rangle : M \text{ is a TM with } \Sigma = \{0,1\} \text{ that accepts at least one word starting with } 0\}
+\]
+
+\textbf{N = ``On input $u$:}
+\begin{enumerate}
+    \item If $u$ does not begin with 0: reject
+    \item Run $M$ on $w$
+    \item Accept''
+\end{enumerate}
+
+\subsubsection{Sample 2026: TM Accepts At Least 5 Words}
+\[
+L_3 = \{\langle M \rangle : |L(M)| \geq 5\}
+\]
+
+\textbf{N = ``On input $u$:}
+\begin{enumerate}
+    \item Run $M$ on $w$
+    \item Accept''
+\end{enumerate}
+
+(If $M$ halts on $w$, $N$ accepts everything, so $|L(N)| = \infty \geq 5$. If $M$ loops, $|L(N)| = 0 < 5$.)
+
+\begin{warning}
+Common mistake: Forgetting that $M$ and $w$ are \textbf{hardcoded} into $N$. The reduction function $F$ outputs a complete description of $N$ that contains the encoding of $M$ and $w$.
+\end{warning}
+
+\newpage
+
+%======================================================================
+\section{Question 4: Complement Not Turing-Recognizable}
+%======================================================================
+
+\subsection{Core Concept}
+
+\begin{theorem}
+If $L$ is Turing-recognizable but not decidable, then $\overline{L}$ (the complement of $L$) is \textbf{not} Turing-recognizable.
+\end{theorem}
+
+\begin{proof}
+Suppose both $L$ and $\overline{L}$ are T-recognizable. Then we could decide $L$ by running recognizers for $L$ and $\overline{L}$ in parallel---one must accept. This contradicts that $L$ is undecidable.
+\end{proof}
+
+\subsection{Strategy}
+
+To show $\overline{L_3}$ is not T-recognizable:
+\begin{enumerate}
+    \item Show $L_3$ \textbf{is} T-recognizable (construct a recognizer)
+    \item Note that $L_3$ is undecidable (from Q3)
+    \item Conclude $\overline{L_3}$ is not T-recognizable
+\end{enumerate}
+
+\subsection{Template for Recognizing $L_3$}
+
+\begin{template}
+\textbf{Proof:} We prove the complement of $L_3$ is not T-r by constructing a TM $M_4$ that recognizes $L_3$.
+
+\textbf{M$_4$ = ``On input $\langle M \rangle$:}
+\begin{enumerate}
+    \item For each word $w \in \Sigma^*$ (in some enumeration):
+    \begin{enumerate}
+        \item Optional: If $w$ matches the required property (e.g., starts with 0, length $> 5$):
+        \item Run $M$ on $w$ in parallel (breadth-first simulation)
+        \item If any running instance of $M$ accepts: \textbf{accept}
+    \end{enumerate}
+\end{enumerate}
+\textbf{''}
+
+TM $M_4$ recognizes $L_3$. Since we proved in Q3 that $L_3$ is undecidable, the complement of $L_3$ is not T-recognizable.
+\end{template}
+
+\subsection{Parallel/Breadth-First Simulation}
+
+\begin{definition}[Dovetailing for TM Simulation]
+To run infinitely many TM instances in parallel:
+\begin{enumerate}
+    \item Round 1: Run $M$ on $w_1$ for 1 step
+    \item Round 2: Run $M$ on $w_1$ for 2 steps, $M$ on $w_2$ for 1 step
+    \item Round 3: Run $M$ on $w_1$ for 3 steps, $w_2$ for 2 steps, $w_3$ for 1 step
+    \item Continue...
+\end{enumerate}
+If any instance accepts, we detect it in finite time.
+\end{definition}
+
+\begin{keypoint}
+This is a \textbf{recognizer}, not a decider. If no word is accepted, $M_4$ runs forever. That's okay---recognizers are allowed to loop on non-members.
+\end{keypoint}
+
+\newpage
+
+%======================================================================
+\section{Question 5: P vs NP-Hard}
+%======================================================================
+
+\subsection{Core Definitions}
+
+\begin{definition}[Class P]
+$L \in$ P if there exists a TM $T$ that decides $L$ in time $O(n^k)$ for some constant $k$, where $n$ is the input size.
+\end{definition}
+
+\begin{definition}[NP-Hard]
+$L$ is NP-hard if every problem in NP can be reduced to $L$ in polynomial time.
+\end{definition}
+
+\subsection{Proving $L \in$ P}
+
+\begin{template}
+\textbf{Proof:} We prove $L_5 \in$ P by constructing a TM $T$ to recognize $L_5$ in polynomial time.
+
+\textbf{T = ``On input $\langle \cdot \rangle$:}
+\begin{enumerate}
+    \item Algorithm steps with complexity annotations
+    \item Accept/Reject based on result''
+\end{enumerate}
+
+\textbf{Complexity Analysis:}
+\begin{itemize}
+    \item Step 1: $O(\cdot)$
+    \item Step 2: $O(\cdot)$
+    \item ...
+\end{itemize}
+Total: $O(\text{polynomial})$
+
+Since $T$ recognizes $L_5$ in polynomial time, $L_5 \in$ P.
+\end{template}
+
+\subsection{Exam Variations}
+
+\subsubsection{January 2025: Common Element in All Sets}
+\[
+L_5 = \{\langle L \rangle : L \text{ is a collection of } M \text{ sets, all sharing at least one common integer}\}
+\]
+
+\textbf{Algorithm:}
+\begin{enumerate}
+    \item For each integer $a$ in the first set: \hfill $[N]$
+    \item Initialize counter $c = 0$ \hfill $[1]$
+    \item For each set $t$ in $L$: \hfill $[M]$
+    \item For each integer $b$ in $t$: \hfill $[N]$
+    \item If $a == b$: increment $c$, break \hfill $[1]$
+    \item If $c == M$: accept \hfill $[1]$
+    \item Reject
+\end{enumerate}
+
+\textbf{Complexity:} $O(N \cdot M \cdot N) = O(MN^2)$ --- polynomial!
+
+\subsubsection{Autumn 2025: Graph Edge Symmetry}
+\[
+L_5 = \{\langle G \rangle : G = (V, E) \text{ where } \forall (a,b) \in E, (b,a) \in E\}
+\]
+
+\textbf{Algorithm:}
+\begin{enumerate}
+    \item For each edge $(a, b)$ in $E$: \hfill $[|E|]$
+    \item If $(b, a) \notin E$: reject \hfill $[|E|]$ (lookup)
+    \item Accept
+\end{enumerate}
+
+\textbf{Complexity:} $O(|E|^2)$ or $O(|E|)$ with hash set --- polynomial!
+
+\subsubsection{Sample 2026: Sets Covering 1--100}
+\[
+L_5 = \{\langle L \rangle : L \text{ is collection of sets that together contain all integers } 1, \ldots, 100\}
+\]
+
+\textbf{Algorithm:}
+\begin{enumerate}
+    \item Create boolean array $\text{found}[1..100]$, initialize to false
+    \item For each set $s$ in $L$: \hfill $[M]$
+    \item For each integer $x$ in $s$: \hfill $[N]$
+    \item If $1 \leq x \leq 100$: $\text{found}[x] = \text{true}$ \hfill $[1]$
+    \item If all entries in found are true: accept
+    \item Reject
+\end{enumerate}
+
+\textbf{Complexity:} $O(MN + 100) = O(MN)$ --- polynomial!
+
+\begin{keypoint}
+To show something is in P, give an explicit algorithm and count the operations. Use big-O notation with input size parameters like $M$, $N$, $|V|$, $|E|$.
+\end{keypoint}
+
+\newpage
+
+%======================================================================
+\section{Question 6: Proving a Language is in NP}
+%======================================================================
+
+\subsection{Core Concept}
+
+\begin{definition}[Class NP]
+$L \in$ NP if there exists a polynomial-time \textbf{verifier} $V$ such that:
+\[
+w \in L \iff \exists \text{ certificate } c \text{ such that } V(w, c) \text{ accepts}
+\]
+The certificate $c$ has polynomial size in $|w|$.
+\end{definition}
+
+\subsection{Template}
+
+\begin{template}
+\textbf{Proof:} We prove $L_6 \in$ NP by constructing a polynomial-time verifier $M_6$.
+
+\textbf{Certificate:} $c = $ [describe what the certificate is]
+
+\textbf{M$_6$ = ``On input $\langle \text{instance}, c \rangle$:}
+\begin{enumerate}
+    \item Verify $c$ has correct format/size
+    \item Check that $c$ satisfies the required property
+    \item Accept if all checks pass, reject otherwise''
+\end{enumerate}
+
+\textbf{Complexity Analysis:} [Show each step is polynomial]
+
+Since $M_6$ verifies $L_6$ in polynomial time, $L_6 \in$ NP.
+\end{template}
+
+\subsection{The Hitting Set Problem}
+
+All Q6 variations are essentially the \textbf{Hitting Set} problem:
+
+\begin{definition}[Hitting Set]
+Given a collection of sets $\{S_1, \ldots, S_n\}$ and integer $k$, does there exist a set $H$ of size $\leq k$ that ``hits'' every set (i.e., $H \cap S_i \neq \emptyset$ for all $i$)?
+\end{definition}
+
+\subsection{Exam Variations}
+
+\subsubsection{January 2025: Students Covering Exams}
+\begin{itemize}
+    \item \textbf{Sets:} $E_1, \ldots, E_x$ (students who attended each exam)
+    \item \textbf{Question:} Can we pick $k$ students to cover all exams?
+    \item \textbf{Certificate:} The set of $k$ students
+\end{itemize}
+
+\subsubsection{Autumn 2025: Players Covering Matches}
+\begin{itemize}
+    \item \textbf{Sets:} $M_1, \ldots, M_n$ (players in each match)
+    \item \textbf{Question:} Can coach pick $k$ players covering all matches?
+    \item \textbf{Certificate:} The set of $k$ players
+\end{itemize}
+
+\subsubsection{Sample 2026: Teacher Guessing Numbers}
+\begin{itemize}
+    \item \textbf{Sets:} $A_1, \ldots, A_N$ (each student's list of $P$ numbers)
+    \item \textbf{Question:} Can teacher guess $k$ numbers hitting every list?
+    \item \textbf{Certificate:} The set of $k$ numbers
+\end{itemize}
+
+\subsection{Verification Algorithm}
+
+\begin{template}
+\textbf{M$_6$ = ``On input $\langle \{S_1, \ldots, S_n\}, k, c \rangle$ where $c$ is the proposed hitting set:}
+\begin{enumerate}
+    \item Check $|c| \leq k$ \hfill $[O(k)]$
+    \item For each set $S_i$: \hfill $[n]$
+    \begin{enumerate}
+        \item For each element $x$ in $c$: \hfill $[k]$
+        \item If $x \in S_i$: mark $S_i$ as hit, break \hfill $[|S_i|]$
+    \end{enumerate}
+    \item If all sets are hit: accept
+    \item Reject''
+\end{enumerate}
+
+\textbf{Complexity:} $O(n \cdot k \cdot m)$ where $m$ is max set size --- polynomial!
+\end{template}
+
+\newpage
+
+%======================================================================
+\section{Question 7: NP-Completeness via 3-SAT Reduction}
+%======================================================================
+
+\subsection{Core Concept}
+
+\begin{definition}[NP-Complete]
+$L$ is NP-complete if:
+\begin{enumerate}
+    \item $L \in$ NP
+    \item $L$ is NP-hard (every NP problem reduces to it)
+\end{enumerate}
+\end{definition}
+
+\begin{theorem}
+To prove $L$ is NP-complete:
+\begin{enumerate}
+    \item Show $L \in$ NP (done in Q6)
+    \item Show a known NP-complete problem reduces to $L$ in polynomial time
+\end{enumerate}
+\end{theorem}
+
+\subsection{3-SAT Definition}
+
+\begin{definition}[3-SAT]
+Given a Boolean formula in CNF where each clause has exactly 3 literals:
+\[
+C = (l_1 \lor l_2 \lor l_3) \land (l_4 \lor l_5 \lor l_6) \land \cdots
+\]
+Is there a truth assignment satisfying all clauses?
+\end{definition}
+
+\subsection{3-SAT to Hitting Set Reduction}
+
+\begin{theorem}
+3-SAT $\leq_p$ Hitting Set
+\end{theorem}
+
+\begin{proof}[Construction]
+Given 3-SAT formula $C$ with $d$ clauses and $g$ variables:
+\begin{enumerate}
+    \item For each clause $(l_1 \lor l_2 \lor l_3)$, create a set $\{l_1, l_2, l_3\}$
+    \item Set $k = g$ (number of variables)
+    \item Output $\langle \{S_1, \ldots, S_d\}, k \rangle$
+\end{enumerate}
+\end{proof}
+
+\begin{keypoint}
+The hitting set corresponds to choosing one literal per clause. Setting $k = g$ ensures we pick at most one literal per variable (either $x$ or $\bar{x}$, not both).
+\end{keypoint}
+
+\subsection{Reduction Template}
+
+\begin{template}
+\textbf{Proof:} We prove NP language $L_6$ is NP-complete by constructing a polynomial-time reduction from 3-SAT.
+
+\textbf{F = ``On input $\langle C \rangle$ where $C$ has $d$ clauses and $g$ variables:}
+\begin{enumerate}
+    \item For each clause $C_i = (l_1 \lor l_2 \lor l_3)$ in $C$:
+    \begin{enumerate}
+        \item Create set $S_i = \{l_1, l_2, l_3\}$
+    \end{enumerate}
+    \item Set $k = g$
+    \item Return $\langle \{S_1, \ldots, S_d\}, k \rangle$''
+\end{enumerate}
+
+\textbf{Correctness:} $\langle \{S_1, \ldots, S_d\}, k \rangle \in L_6$ iff $\langle C \rangle \in$ 3-SAT.
+
+\textbf{Complexity:} $O(d \cdot 3) = O(d)$ --- polynomial!
+\end{template}
+
+\subsection{Worked Example (Sample 2026)}
+
+\textbf{Input:} $C = (a \lor b \lor c) \land (b \lor d \lor e) \land (d \lor e \lor f) \land (b \lor e \lor f)$
+
+Variables: $a, b, c, d, e, f$ (so $g = 6$)
+
+Clauses: 4 (so $d = 4$)
+
+\textbf{Reduction:}
+\begin{align*}
+S_1 &= \{a, b, c\} \\
+S_2 &= \{b, d, e\} \\
+S_3 &= \{d, e, f\} \\
+S_4 &= \{b, e, f\}
+\end{align*}
+
+\textbf{Output:} $\langle \{\{a,b,c\}, \{b,d,e\}, \{d,e,f\}, \{b,e,f\}\}, 6 \rangle$
+
+\begin{keypoint}
+The literals in the sets are the actual literals (including negations like $\bar{a}$), not just variables. If a clause contains $\bar{x}$, use $\bar{x}$ in the set.
+\end{keypoint}
+
+\newpage
+
+%======================================================================
+\section{Quick Reference: Key Theorems}
+%======================================================================
+
+\begin{enumerate}
+    \item \textbf{Countable sets:} Can be enumerated by a TM
+    
+    \item \textbf{Decidable:} TM always halts with correct answer
+    
+    \item \textbf{FA properties:} All decidable (finite state space)
+    
+    \item \textbf{TM properties:} Generally undecidable (Rice's theorem)
+    
+    \item \textbf{HALT:} Undecidable (given)
+    
+    \item \textbf{If $A \leq_m B$ and $A$ undecidable:} $B$ undecidable
+    
+    \item \textbf{T-recognizable but undecidable:} Complement is not T-r
+    
+    \item \textbf{P:} Decidable in polynomial time
+    
+    \item \textbf{NP:} Verifiable in polynomial time with certificate
+    
+    \item \textbf{NP-complete:} In NP and NP-hard
+    
+    \item \textbf{3-SAT:} NP-complete (given)
+    
+    \item \textbf{Hitting Set:} NP-complete (prove via 3-SAT)
+\end{enumerate}
+
+\newpage
+
+%======================================================================
+\section{Common Mistakes to Avoid}
+%======================================================================
+
+\begin{warning}
+\begin{enumerate}
+    \item \textbf{Q1:} Forgetting that the decider (writerlo, python, etc.) is given and always halts
+    
+    \item \textbf{Q2:} Confusing decidability of FA properties vs TM properties
+    
+    \item \textbf{Q3:} Forgetting that $M$ and $w$ are hardcoded into $N$
+    
+    \item \textbf{Q3:} Writing ``Run $M$ on $u$'' instead of ``Run $M$ on $w$''
+    
+    \item \textbf{Q4:} Trying to build a decider instead of a recognizer
+    
+    \item \textbf{Q5:} Not showing complexity analysis
+    
+    \item \textbf{Q6:} Forgetting to specify the certificate
+    
+    \item \textbf{Q7:} Confusing variables with literals in the reduction
+    
+    \item \textbf{Q7:} Setting $k$ incorrectly (should be number of variables)
+\end{enumerate}
+\end{warning}
+
+\newpage
+
+%======================================================================
+\section{Last-Minute Checklist}
+%======================================================================
+
+Before the exam, make sure you can:
+
+\begin{itemize}
+    \item[$\square$] Write a dovetailing enumeration algorithm
+    \item[$\square$] Construct decidability proofs for FA properties
+    \item[$\square$] Fill in the mapping reduction template from HALT
+    \item[$\square$] Construct a recognizer using parallel simulation
+    \item[$\square$] Analyze algorithm complexity with big-O notation
+    \item[$\square$] Define appropriate certificates for NP problems
+    \item[$\square$] Reduce 3-SAT to Hitting Set
+    \item[$\square$] Work through a 3-SAT reduction example by hand
+\end{itemize}
+
+\vspace{1cm}
+\begin{center}
+\textit{Good luck with your exam!}
+\end{center}
+
+\end{document}
